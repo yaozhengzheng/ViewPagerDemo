@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="ViewPager从网络获取图片"
+        android:textColor="#353535"
+        android:textSize="17sp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="实现无限轮播效果"
+        android:textColor="#353535"
+        android:textSize="17sp"
+        android:textStyle="bold"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginTop="30dip">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_centerInParent="true">
+
+        </android.support.v4.view.ViewPager>
+
+        <!-- 存放代表viewpager播到第几张的小圆点 -->
+        <LinearLayout
+            android:id="@+id/ll_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:background="#55000000"
+            android:orientation="horizontal"
+        >
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
